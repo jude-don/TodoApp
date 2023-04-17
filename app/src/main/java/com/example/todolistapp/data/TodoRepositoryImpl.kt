@@ -9,15 +9,15 @@ import javax.inject.Inject
 class TodoRepositoryImpl @Inject constructor(
     private val dao: TodoDao
 ) : TodoRepository {
-    override suspend fun inserTodo(localTodo: Todo) {
+    override suspend fun inserTodo(newlocalTodo: Todo) {
         withContext(Dispatchers.IO){
-            dao.inserTodo(localTodo)
+            dao.inserTodo(newlocalTodo)
         }
     }
 
-    override suspend fun deleteTodo(localTodo: Todo) {
+    override suspend fun deleteTodo(newlocalTodo: Todo) {
         withContext(Dispatchers.IO){
-            dao.deleteTodo(localTodo)
+            dao.deleteTodo(newlocalTodo)
         }
     }
 

@@ -56,10 +56,10 @@ fun ToDoScreen(
             title = {
                 Text(
                     text = "My Tasks",
-                    color = Color.White
+                    color = Color.Black
                 )
             },
-            backgroundColor = Color.Green
+            backgroundColor = Color(0xFF3660F1)
         )
         },
         floatingActionButton = {
@@ -109,7 +109,7 @@ private fun TodoItem(
     modifier: Modifier = Modifier
 ){
     Row(
-        modifier = Modifier,
+        modifier = modifier,
         verticalAlignment = Alignment.CenterVertically
     ) {
         Column(

@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {
 
-    suspend fun inserTodo(localTodo: Todo)
+    suspend fun inserTodo(todo: Todo)
 
 
     suspend fun deleteTodo(todo: Todo)
